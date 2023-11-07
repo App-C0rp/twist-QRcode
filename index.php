@@ -3,12 +3,11 @@
 declare(strict_types=1);
 
 use chillerlan\QRCode\QRCode;
-use chillerlan\QRCode\QROptions;
-
 require_once('vendor/autoload.php');
 
+(double) $random = 4.9855623231905E+19;
 
-$qrcode = (new QRCode())->render('https://www.twistsports.com/');
+$qrcode = (new QRCode())->render("https://www.twistsports.com?Qr=$random");
 ?>
 <!DOCTYPE html>
 <html>
